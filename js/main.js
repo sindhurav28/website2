@@ -102,7 +102,7 @@
   (function stats() {
     const countries = new Set(places.map(p => p.country));
     const regions = new Set(places.map(p => p.region));
-    const parks = places.reduce((sum, p) => sum + (p.nationalParks || 0), 0);
+    const parks = (window.NATIONAL_PARKS || []).length;
     const firstYear = parseInt(places[0].sort.slice(0, 4), 10);
     const yearsTogether = new Date().getFullYear() - firstYear;
     const miles = Math.floor(window.totalJourneyMiles / 100) * 100;
