@@ -105,7 +105,7 @@
     const parks = (window.NATIONAL_PARKS || []).length;
     const firstYear = parseInt(places[0].sort.slice(0, 4), 10);
     const yearsTogether = new Date().getFullYear() - firstYear;
-    const miles = Math.floor(window.totalJourneyMiles / 100) * 100;
+    const miles = Math.round(window.totalJourneyMiles);
 
     // Lists shown in the pop-up when a stat is clicked
     const countryCounts = {}, regionCounts = {};
@@ -121,10 +121,10 @@
     const data = [
       { num: places.length, label: 'Markets Entered', title: 'All ' + places.length + ' Destinations', list: destList },
       { num: countries.size, label: 'Global Reach', title: 'Countries Visited', list: countryList },
-      { num: parks, suffix: '+', label: 'Parks Shipped', title: 'National Parks Explored', list: parkList },
-      { num: regions.size, suffix: '+', label: 'Regions Scaled', title: 'States & Regions', list: regionList },
-      { num: yearsTogether, suffix: '+', label: 'Runway with Sindhura (yrs)' },
-      { num: miles, suffix: '+', label: 'Distance Scaled (mi)', format: withCommas },
+      { num: parks, label: 'Parks Shipped', title: 'National Parks Explored', list: parkList },
+      { num: regions.size, label: 'Regions Scaled', title: 'States & Regions', list: regionList },
+      { num: yearsTogether, label: 'Runway with Sindhura (yrs)' },
+      { num: miles, label: 'Distance Scaled (mi)', format: withCommas },
     ];
 
     const box = document.getElementById('stats');
