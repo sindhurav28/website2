@@ -62,13 +62,13 @@
 
   function showTitleStatic() {
     const el = document.getElementById('hero-title');
-    if (el) el.innerHTML = 'K&amp;S Travel Journal';
+    if (el) el.textContent = "K's PJ";
   }
 
   function typeTitle() {
     const el = document.getElementById('hero-title');
     if (!el) return;
-    const text = 'K&S Travel Journal';
+    const text = "K's PJ";
     let i = 0;
     (function stepType() {
       if (i <= text.length) {
@@ -123,7 +123,7 @@
       { num: countries.size, label: 'Global Reach', title: 'Countries Visited', list: countryList },
       { num: parks, suffix: '+', label: 'Parks Shipped', title: 'National Parks Explored', list: parkList },
       { num: regions.size, suffix: '+', label: 'Regions Scaled', title: 'States & Regions', list: regionList },
-      { num: yearsTogether, suffix: '+', label: 'Runway (yrs)' },
+      { num: yearsTogether, suffix: '+', label: 'Runway with Sindhura (yrs)' },
       { num: miles, suffix: '+', label: 'Distance Scaled (mi)', format: withCommas },
     ];
 
