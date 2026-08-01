@@ -7,11 +7,11 @@
   const EGGS = {
     piper: {
       title: 'Pied Piper',
-      text: '“It’s called Pied Piper. It’s a compression company…” — turns out it compresses 3½ years and 36 destinations into one little map. 🥧'
+      text: 'A compression company. I compressed all my love for you into this one place. 🥧'
     },
     commas: {
       title: 'Tres Commas',
-      text: 'You know what has three commas? A billion dollars 🤑 — and the number of reasons I’m glad I met you.'
+      text: 'Tres Commas means a billion 🤑 — exactly the number of reasons I love you!'
     },
     anton: {
       title: 'Anton',
@@ -19,7 +19,7 @@
     },
     middleout: {
       title: 'Middle-Out',
-      text: 'Middle-out compression engaged. 📦 Weissman score of this relationship: 5.2 — the theoretical maximum. 🚀'
+      text: 'Middle-out compression engaged. 📦 My Weissman score for you: 5.2 — the theoretical maximum. 🚀'
     },
     hotdog: {
       title: 'SeeFood™',
