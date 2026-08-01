@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K&S Travel Journal</title>
+
+  <!-- set theme before paint to avoid a flash -->
+  <script>(function(){try{var t=localStorage.getItem('kns-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+
+  <link rel="stylesheet" href="css/styles.css?v=5" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+</head>
+<body>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">☀ light mode</button>
+
+  <header class="place-hero" id="place-hero"><!-- filled by JavaScript --></header>
+
+  <main class="place-body" id="place-body"><!-- filled by JavaScript --></main>
+
+  <footer class="site-footer">
+    <a href="index.html">← back to the map</a>
+  </footer>
+
+  <!-- Lightbox for viewing photos large -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="js/data.js?v=5"></script>
+  <script src="js/theme.js?v=5"></script>
+  <script src="js/place.js?v=5"></script>
+</body>
+</html>
